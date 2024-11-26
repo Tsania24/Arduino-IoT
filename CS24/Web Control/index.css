@@ -1,0 +1,83 @@
+body {
+    background: rgb(7, 22, 60);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    color: #fff;
+    text-align: center;
+}
+
+.background-text {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2.5rem;
+    font-weight: bold;
+    opacity: 0.5;
+    z-index: -1;
+    pointer-events: none;
+    width: 90%;
+    max-width: 800px;
+}
+
+.sub-text {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.2rem;
+    opacity: 0.7;
+    z-index: 1;
+    pointer-events: none;
+    width: 90%;
+    max-width: 800px;
+}
+
+.form-box {
+    position: relative;
+    margin-top: 50px; /* Mengatur jarak antara tombol dan teks */
+}
+
+.button-box {
+    width: 220px;
+    position: relative;
+    border-radius: 30px;
+    background: #fff;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+.toggle-btn {
+    padding: 10px 40px;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    outline: none;
+    position: relative;
+    text-align: center;
+    z-index: 1;
+}
+
+#btn {
+    left: 0;
+    top: 0;
+    position: absolute;
+    width: 110px;
+    height: 100%;
+    background: #e6bc22;
+    border-radius: 30px;
+    transition: .5s;
+    z-index: 0;
+}
+
+.description {
+    margin-top: 10px;
+    font-size: 1rem;
+    opacity: 0.8;
+}
